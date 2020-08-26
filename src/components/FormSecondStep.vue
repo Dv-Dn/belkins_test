@@ -27,7 +27,7 @@
 		</div>
 		<div class="form-interested">
 			<span class="form-interested__title">Interested in:</span
-			><span class="form-interested__error" v-if="$v.interested.$invalid"
+			><span class="form-interested__error" v-if="$v.interested.$error"
 				>Choose at least one service</span
 			>
 		</div>
@@ -57,7 +57,9 @@ import Button from "./UI/Button";
 import Checkbox from "./UI/Checkbox";
 import Icon from "./UI/Icon";
 import { required, minLength } from "vuelidate/lib/validators";
-
+const interestedValid = (value) => {
+	return value.filter((el) => el.checked === true).length > 0;
+};
 export default {
 	components: {
 		Input,
@@ -79,11 +81,7 @@ export default {
 
 		touched: false,
 	}),
-	computed: {
-		interestedValid() {
-			return this.interested.filter((el) => el.checked === true).length > 1;
-		},
-	},
+
 	validations: {
 		company: {
 			required,
@@ -96,7 +94,9 @@ export default {
 		timeZone: {
 			minLength: minLength(4),
 		},
-		interested: {},
+		interested: {
+			interestedValid,
+		},
 	},
 	methods: {
 		handleBack() {
