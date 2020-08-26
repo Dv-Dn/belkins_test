@@ -22,29 +22,11 @@
 <script>
 import FormFirstStep from "./FormFirstStep";
 import FormSecondStep from "./FormSecondStep";
-import { required, minLength } from "vuelidate/lib/validators";
 export default {
 	components: { FormFirstStep, FormSecondStep },
 	data: () => ({
-		company: "",
-		industry: "",
-		timeZone: "",
-		touched: false,
 		step: 1,
 	}),
-	validations: {
-		company: {
-			required,
-			minLength: minLength(4),
-		},
-		indusrty: {
-			required,
-			minLength: minLength(4),
-		},
-		timeZone: {
-			minLength: minLength(4),
-		},
-	},
 	methods: {
 		handleNextStep(isError) {
 			if (!isError) this.step = 2;
