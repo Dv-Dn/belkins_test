@@ -1,0 +1,37 @@
+.input {
+	position: relative;
+	text-align: left;
+	padding-top: 32px;
+	display: flex;
+	max-width: 100%;
+	flex: 1 1 auto;
+	color: $text-grey;
+
+	&__label {
+		left: 0px;
+		top: 0;
+		right: auto;
+		position: absolute;
+		color: #838383;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 21px;
+	}
+	&__field {
+		width: 100%;
+		min-width: 0;
+		&::placeholder {
+			color: #cfcfcf;
+		}
+	}
+	&__control {
+		cursor: text;
+		flex-grow: 1;
+		height: 64px;
+		padding: 0 25px;
+		background-color: $white;
+		border-radius: $border-radius;
+		display: flex;
+		align-items: center;
+	}
+}

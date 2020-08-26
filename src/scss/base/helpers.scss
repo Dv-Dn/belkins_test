@@ -1,0 +1,47 @@
+.container {
+	display: flex;
+	position: relative;
+	flex: 1 0 auto;
+	width: 100%;
+	@include min-max(320px, 930px, 15px);
+}
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+.text_white {
+	color: $white;
+}
+.text_black {
+	color: $black;
+}
+.bg_primary {
+	background-color: $primary-bg;
+}
+.bg_white {
+	background-color: $white;
+}
+.bg_grey {
+	background-color: $grey;
+}
+.d_f {
+	display: flex;
+}
+.w-100 {
+	width: 100%;
+}
+.ai_c {
+	align-items: center;
+}
+.ai_e {
+	align-items: end;
+}
+.jc_c {
+	justify-content: center;
+}
+.jc_sa {
+	justify-content: space-around;
+}
+.js_sb {
+	justify-content: space-between;
+}

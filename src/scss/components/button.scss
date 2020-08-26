@@ -1,0 +1,41 @@
+.button {
+	background: $primary_bg;
+	border-radius: $border-radius;
+	color: $white;
+	font-weight: 600;
+	min-width: 64px;
+	height: 54px;
+	padding: 0 20px;
+	transition: 0.2s ease-in-out;
+	&:hover:not(:disabled) {
+		opacity: 0.9;
+		box-shadow: 0 0 12px 1px rgba($color: $black, $alpha: 0.2);
+	}
+	&:active:not(:disabled) {
+		transform: scale(0.97);
+	}
+	&:disabled {
+		background: $grey;
+	}
+	&_small {
+		height: 41px;
+		font-size: 14px;
+	}
+	&_big {
+		height: 64px;
+	}
+	&_block {
+		display: flex;
+		align-items: center;
+		flex: 1 0 auto;
+		min-width: 100%;
+		max-width: auto;
+	}
+	&_border {
+		border: 2px solid $border-color;
+	}
+	&_white {
+		background: $white;
+		color: $black;
+	}
+}

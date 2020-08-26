@@ -1,0 +1,30 @@
+.header {
+	height: 100px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.03);
+	font-weight: 500;
+	&__container {
+		width: 100%;
+		@include min-max(320px, 1200px, 30px);
+		display: grid;
+		grid-template-columns:
+			repeat(2, max-content)
+			minmax(0, 50px)
+			repeat(2, auto) max-content
+			minmax(0, 450px)
+			repeat(2, max-content);
+		column-gap: 20px;
+	}
+	&__logo {
+		margin-left: 10px;
+		margin-bottom: 3px;
+	}
+	&__phone {
+		font-size: 14px;
+	}
+	&__vertical-line {
+		background: #e8e8e8;
+		width: 1px;
+		// margin: 0 20px;
+		height: 16px;
+	}
+}

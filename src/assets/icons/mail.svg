@@ -1,0 +1,10 @@
+<svg width="40" height="40" fill="none">
+  <circle r="20" fill="url(#paint0_linear)" transform="matrix(-1 0 0 1 20 20)"/>
+  <path fill="#F6F6F6" d="M13.6 13h12.8c.4 0 .8.2 1.1.5.3.3.5.8.5 1.3v10.4a1.9 1.9 0 01-.5 1.3l-.5.4-.6.1H13.6c-.9 0-1.6-.8-1.6-1.8V14.8c0-1 .7-1.8 1.6-1.8zm6.4 6.1l6.4-4.4H13.6l6.4 4.4zm-6.4 6.1h12.8v-8.4L20 21.2l-6.4-4.4v8.4z"/>
+  <defs>
+    <linearGradient id="paint0_linear" x1="40" x2="-1.4" y1="0" y2="1.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF7426"/>
+      <stop offset="1" stop-color="#FF5F21"/>
+    </linearGradient>
+  </defs>
+</svg>
